@@ -13,3 +13,6 @@ class BaseTest:
 
     def go_to_page(self, url:str):
         self.driver.get(url)
+
+
+        
