@@ -1,18 +1,17 @@
-from selenium import webdriver
+from selenium.webdriver.chrome.webdriver import WebDriver as ChromeWebDriver
+from selenium.webdriver.remote.webdriver import WebDriver as RemoteWebDriver
 import pytest
 
 
 class BaseTest:
-    def __init__(self):
-        self.driver = webdriver.Chrome()
+    driver: ChromeWebDriver | RemoteWebDriver
 
-    @pytest.fixture
-    def arrange(self):
-        pass
-        # тут какие то действия по подготовке окружения
+    @pytest.fixture(autouse=True)
+    def setup(self, create_remote):
+        self.driver = create_remote
 
-    def go_to_page(self, url:str):
-        self.driver.get(url)
+    @pytest.fixture(autouse=True)
+    def teardown(self):
+        self.driver.quit()
 
 
-        
