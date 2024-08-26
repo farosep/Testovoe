@@ -10,5 +10,8 @@ class BaseTest:
     def setup(self, create_browser):
         self.driver = create_browser
 
+    @pytest.fixture(autouse=True)
+    def teardown(self):
+        self.driver.quit()
 
 

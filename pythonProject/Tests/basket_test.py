@@ -1,5 +1,5 @@
 from pages.MainPage import MainPage
-from tests.base_test import BaseTest
+from base_test import BaseTest
 
 
 class TestBasket(BaseTest):
@@ -9,13 +9,10 @@ class TestBasket(BaseTest):
 
         #Act
         main_page.open_page()
-        main_page.select_parents_radio()
-        catalog_page = main_page.select_11_class()
+        catalog_page = main_page.select_ege_11()
         catalog_page.wait_until_loaded()
-        catalog_page.button_profile_math.scroll_to_element()
-        catalog_page.select_profil_math()
-        catalog_page.select_sharafiev_course()
 
+        #хорошая идея будет сделать тут фиск этого косяка про фикстуры
 
         pass
         #Assert
