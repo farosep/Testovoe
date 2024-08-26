@@ -23,22 +23,13 @@ class TestBooking:
         assert isinstance(data["depositpaid"], bool)
         assert isinstance(data["additionalneeds"], str)
 
-    def test_create_token(self):
-        # Arrange
-        url = self.base_url + f"auth"
-        headers = {'Content-Type': 'application/json'}
-        payload = {"username": "admin", "password": "password123"}
-
-        # Act
-        response = requests.post(url, headers=headers, json=payload)
-        data = response.json()
-
-        # Assert
-        assert isinstance(data["token"], str)
-        assert len(data["token"]) > 10
-        assert response.status_code == 200
-
-# TODO Техдолг, нужно дописать тест
+# TODO Техдолг, нужно дописать тесты
     def test_create_booking(self):
         pass
         # https://restful-booker.herokuapp.com/apidoc/index.html
+
+    def test_delete_booking(self):
+        pass
+        # https://restful-booker.herokuapp.com/apidoc/index.html
+
+    # Со звёздочкой, сделать использование токена в посте

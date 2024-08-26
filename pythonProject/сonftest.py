@@ -33,7 +33,7 @@ def create_remote():
     yield driver
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def create_browser():
     chrome_options = Options()
     #chrome_options.add_argument('--headless')
