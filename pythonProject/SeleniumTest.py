@@ -7,6 +7,7 @@ import random
 # Задача1 - Пройти вручную по этому тесту и выяснить что вообще он проверяет
 # Задача2 - Выявить проблемы этого теста
 
+
 def test_1():
     wait = random.randint(5, 20)
     driver = webdriver.Chrome()

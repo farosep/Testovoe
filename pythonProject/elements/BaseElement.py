@@ -16,7 +16,7 @@ class BaseElement:
         :param name: Название элемента.
         """
         self._locator = locator
-        self._driver = driver
+        self.driver = driver
         self.__name = name
 
     def check_visibility(self, max_timeout: int = 8):
@@ -34,23 +34,22 @@ class BaseElement:
         Returns:
             Найденный элемент на странице
         """
-        return WebDriverWait(self._driver, max_timeout).until(
+        return WebDriverWait(self.driver, max_timeout).until(
             ec.visibility_of_element_located(self._locator),
             f"Элемент не отображается на странице спустя {max_timeout} секунд. Локатор: {self._locator}",
         )
-
 
     def _find_clickable_element(self, max_timeout: int = 8) -> WebElement:
         """Поиск кликабельного элемента в DOM дереве
         Returns:
             Найденный элемент на странице
         """
-        return WebDriverWait(self._driver, max_timeout).until(
+        return WebDriverWait(self.driver, max_timeout).until(
             ec.element_to_be_clickable(self._locator),
             f"Кликабельный элемент не отображается на странице спустя {max_timeout} секунд. Локатор: {self._locator}",
         )
 
     def scroll_to_element(self):
         """Метод предназначен для скролла до WebElement-а, если он находится за пределами видимости в окне браузера."""
-        action_chains = ActionChains(self._driver)
+        action_chains = ActionChains(self.driver)
         action_chains.move_to_element(self._element).perform()
