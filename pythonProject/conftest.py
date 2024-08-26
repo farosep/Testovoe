@@ -33,9 +33,9 @@ def create_remote():
 
 
 @pytest.fixture(scope="function")
-def create_browser():
+def create_local():
     chrome_options = Options()
-    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless')
     chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument("--remote-debugging-port=8888")
     driver = webdriver.Chrome(options=chrome_options)

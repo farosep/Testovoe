@@ -7,8 +7,8 @@ class BaseTest:
     driver: ChromeWebDriver | RemoteWebDriver
 
     @pytest.fixture(autouse=True)
-    def setup(self, create_browser):
-        self.driver = create_browser
+    def setup(self, create_remote):
+        self.driver = create_remote
 
 
 
