@@ -7,8 +7,8 @@ from pages.Basket import BasketPage
 
 
 class SharafievPage(BasePage):
-    title_locator = By.CSS_SELECTOR, "#__nuxt > main > div:nth-child(1) > div.my-8.sm\\:my-10.text-center > h1"
-    in_basket_button_locator = By.CSS_SELECTOR, "#__nuxt > main > div:nth-child(1) > div:nth-child(2) > div > div.p-4.sm\:p-5.md\:p-8.space-y-8 > div.flex.justify-start.flex-wrap.gap-4.flex-col-reverse.sm\:flex-row > button"
+    title_locator = By.XPATH, "//h1[contains(.,'Артуром Шарафиевым')]"
+    in_basket_button_locator = By.CSS_SELECTOR, "[data-testid='ADD_PRODUCT_TO_CARD_BUTTON']"
     basket_locator = By.CSS_SELECTOR, "[href=\"/cart/\"]"
 
     def wait_until_loaded(self):

@@ -11,7 +11,7 @@ class MainPage(BasePage):
 
     name_input = By.CSS_SELECTOR, "[data-testid=\"INPUT_FIELD_full_name\"]"
 
-    parent_radio_selector = By.CSS_SELECTOR, "[data-testid=\"TAB_parent\"]"
+    parent_radio_selector = By.CSS_SELECTOR, "[data-testid='TAB_parent']"
     student_radio_selector = By.CSS_SELECTOR, "[data-testid=\"TAB_child\"]"
 
     select_ege_11_selector = By.CSS_SELECTOR, "div > a[href=\"/ege/11-class/\"]"
