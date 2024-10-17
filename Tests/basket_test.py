@@ -9,7 +9,7 @@ class TestBasket(BaseTest):
 
         #Act
         main_page.open_page()
-        main_page.select_parents_radio() # падает на интерсепте, хотя ничем не перекрыто
+        main_page.select_parents_radio() # Нестабильное поведение, рандомно падает с интерсептом
         catalog_page = main_page.select_11_class()
         catalog_page.wait_until_loaded()
         catalog_page.select_profil_math()
