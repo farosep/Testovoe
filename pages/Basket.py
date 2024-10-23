@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as ec
 
 class BasketPage(BasePage):
     title_locator = By.CSS_SELECTOR, "#__nuxt > main > div.mx-auto.w-\[1446px\].max-w-full.p-container > div.my-8.sm\:my-10.text-center > h1"
-    product_wiget_locator = By.CSS_SELECTOR, "#__nuxt > main > div.mx-auto.w-\[1446px\].max-w-full.p-container > div.grid.gap-x-4.grid-cols-1.md\:grid-cols-\[3\.3fr_1fr\].items-start > div:nth-child(1) > div > ul > li > div"
+    product_wiget_locator = By.XPATH, '//*[@id="__nuxt"]/main/div[2]/div[2]/section[1]/div[2]'
 
     def wait_until_loaded(self):
         self._wait_until_url_contains("/cart")
