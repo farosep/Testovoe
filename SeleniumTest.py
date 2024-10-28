@@ -4,8 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import random
 
-# Задача1 - Пройти вручную по этому тесту и выяснить что вообще он проверяет
-# Задача2 - Выявить проблемы этого теста
+# Задача1 - Выявить проблемы этих тестов
 
 
 def test_1():

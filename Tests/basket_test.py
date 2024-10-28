@@ -4,7 +4,7 @@ from Tests.base_test import BaseTest
 
 class TestBasket(BaseTest):
 
-    # TODO 1)
+    # TODO починить выпавшие ошибки
 
     def test_cart(self):
         #Arrange
