@@ -1,9 +1,8 @@
 from selenium.webdriver.common.by import By
 from pages.SharafievPage import SharafievPage
-
-from elements.BaseElement import BaseElement
 from elements.Button import Button
 from pages.BasePage import BasePage
+from pages.MathCatalogPage import MathCatalogPage
 
 
 class CatalogPage(BasePage):
@@ -18,6 +17,7 @@ class CatalogPage(BasePage):
 
     def select_profil_math(self):
         self.button_profile_math.click()
+        return MathCatalogPage(self.driver)
 
     def select_sharafiev_course(self):
         self.button_sharafiev_cource.click()

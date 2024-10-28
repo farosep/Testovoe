@@ -4,7 +4,8 @@ from elements.BaseElement import BaseElement
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
-class BasketPage(BasePage):
+
+class CartPage(BasePage):
     title_locator = By.CSS_SELECTOR, "#__nuxt > main > div.mx-auto.w-\[1446px\].max-w-full.p-container > div.my-8.sm\:my-10.text-center > h1"
     product_wiget_locator = By.XPATH, '//*[@id="__nuxt"]/main/div[2]/div[2]/section[1]/div[2]'
 
