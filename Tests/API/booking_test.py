@@ -23,12 +23,8 @@ class TestBooking:
         assert isinstance(data["depositpaid"], bool)
         assert isinstance(data["additionalneeds"], str)
 
-# TODO Техдолг, нужно дописать тесты
+# TODO Написать параметризованный тест который проверит всё что нужно
     def test_create_booking(self):
-        pass
-        # https://restful-booker.herokuapp.com/apidoc/index.html
-
-    def test_delete_booking(self):
         pass
         # https://restful-booker.herokuapp.com/apidoc/index.html
 
