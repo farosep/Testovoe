@@ -3,6 +3,9 @@ from Tests.base_test import BaseTest
 
 
 class TestBasket(BaseTest):
+
+    # TODO 1)
+
     def test_cart(self):
         #Arrange
         main_page = MainPage(self.driver)
@@ -19,6 +22,6 @@ class TestBasket(BaseTest):
         basket_page = course_page.go_to_cart()
 
         # Assert
-        basket_page.check_product_is_added() # продукт не добавился, а проверка прошла
+        basket_page.check_product_is_added()
 
 

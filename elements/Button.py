@@ -13,5 +13,5 @@ class Button(BaseElement):
     def click(self, with_scroll=True):
         """Клик по элементу с заданным локатором."""
         if with_scroll:
-            self.scroll_to_element()
+            self.move_to_element()
         self._clickable_element.click()

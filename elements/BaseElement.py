@@ -49,7 +49,7 @@ class BaseElement:
             f"Кликабельный элемент не отображается на странице спустя {max_timeout} секунд. Локатор: {self._locator}",
         )
 
-    def scroll_to_element(self):
+    def move_to_element(self):
         """Метод предназначен для скролла до WebElement-а, если он находится за пределами видимости в окне браузера."""
         action_chains = ActionChains(self.driver)
         action_chains.move_to_element(self._element).perform()
