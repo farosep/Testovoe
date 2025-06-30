@@ -8,7 +8,7 @@ class BaseTest:
 
     @pytest.fixture(autouse=True)
     def setup(self, create_local):
-        self.driver = create_local
+        self.page = create_local
 
 
 

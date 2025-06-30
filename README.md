@@ -7,7 +7,8 @@
 Для создания вирутального окружения
 1) python -m venv myenv в корне проекта
 2) myenv\Scripts\activate для активации виртуального окружения 
-3) pip install -r requirements.txt для установки нужных зависимостей 
+3) pip install -r requirements.txt для установки нужных зависимостей
+4) playwright install для установки драйвера PW 
 
 Для создания Интерпретатора - 
 1) деактивировать окружение командой deactivate, если оно включено 
