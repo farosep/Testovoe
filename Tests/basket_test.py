@@ -5,7 +5,8 @@ from Tests.base_test import BaseTest
 class TestBasket(BaseTest):
 
     # TODO починить выпавшие ошибки
-
+    # Это тест который переходит в каталог егэ -> профильную математику -> выбирает курс шарафиева
+    #  -> добавляет в корзину и проверяет что он добавился 
     def test_cart(self):
         #Arrange
         main_page = MainPage(self.page)
