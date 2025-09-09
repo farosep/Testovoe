@@ -24,5 +24,6 @@ class TestBasket(BaseTest):
         # Assert
         basket_page.check_product_is_added()
 
+    # со звездочкой - сделать красиво сайдбар в выборе предметов
 
 
