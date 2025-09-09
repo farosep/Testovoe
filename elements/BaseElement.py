@@ -24,6 +24,7 @@ class BaseElement:
         """ОР: Элемент отображается на странице"""
         self._find_element(max_timeout)
 
+
     @property
     @abstractmethod
     def _element(self) -> Locator:

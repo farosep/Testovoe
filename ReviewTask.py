@@ -9,7 +9,7 @@ def test_1():
     page = browser.new_page()
     page.goto("https://umschool.net/")
     sleep(wait)
-    parent_button = page.locator("[data-testid=\'TAB_parent\']")
+    parent_button = page.locator("[data-testid='TAB_parent']")
     parent_button.click()
     sleep(wait)
     subjects = ["Базовая математика", "Английский язык", "История", "Физика"]

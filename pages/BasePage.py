@@ -10,7 +10,7 @@ class BasePage:
         """
         self.page = page
 
-    def _wait_until_url_contains(self, url: str, max_timeout: int = 8):
+    def _wait_until_url_contains(self, url: str, max_timeout: int = 8000):
         """
         Ожидание появления в URL заданного значения.
 

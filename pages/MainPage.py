@@ -9,10 +9,10 @@ from pages.Catalog import CatalogPage
 class MainPage(BasePage):
     _page_url = "https://umschool.net/"
 
-    _name_input =  "[data-testid='INPUT_FIELD_full_name']"
+    _name_input = "[data-testid='INPUT_FIELD_full_name']"
 
-    _parent_radio_selector =  "[data-testid='TAB_parent']"
-    _student_radio_selector =  "[data-testid='TAB_child']"
+    _parent_radio_selector = "[data-testid='TAB_parent']"
+    _student_radio_selector = "[data-testid='TAB_child']"
     _cart_button_selector =  "[data-testid='HEADER_CART_BUTTON']"
 
     _select_ege = "(//a[@href='/ege/'])[2]"
