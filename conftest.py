@@ -1,7 +1,5 @@
 import pytest
 import datetime
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from playwright.sync_api import sync_playwright
 
 

@@ -1,4 +1,4 @@
-from selenium.webdriver.common.by import By
+
 
 from elements.BaseElement import BaseElement
 from elements.Button import Button

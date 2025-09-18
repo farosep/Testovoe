@@ -1,11 +1,4 @@
 from abc import abstractmethod
-
-from selenium.webdriver.chrome.webdriver import WebDriver as ChromeWebDriver
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.remote.webdriver import WebDriver as RemoteWebDriver
-from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.support.wait import WebDriverWait
 from playwright.sync_api import Page, Locator
 
 

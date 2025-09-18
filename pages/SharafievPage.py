@@ -1,8 +1,5 @@
-from selenium.webdriver.common.by import By
 from pages.BasePage import BasePage
 from elements.Button import Button
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
 from pages.Cart import CartPage
 
 

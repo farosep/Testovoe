@@ -1,4 +1,4 @@
-from selenium.webdriver.common.by import By
+
 
 from elements.Button import Button
 from pages.BasePage import BasePage
